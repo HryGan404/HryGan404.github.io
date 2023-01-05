@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sorceress crucible</title>
+        <link>https://Ins1nuatE.github.io/</link>
+        <description>Ins1nuatE</description>
+        <generator>Hugo 0.105.0 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>G.Jianghao@outlook.com (InsinuatE)</managingEditor>
+        
+        
+            <webMaster>G.Jianghao@outlook.com (InsinuatE)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+        
+        <lastBuildDate>Thu, 05 Jan 2023 12:07:25 &#43;0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
+        
+        
+            <item>
+                <title>Hello World</title>
+                <link>https://Ins1nuatE.github.io/posts/hello-world/</link>
+                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/hello-world/</guid>
+                <pubDate>Thu, 05 Jan 2023 09:27:26 &#43;0800</pubDate>
+                
+                    <author>G.Jianghao@outlook.com (InsinuatE)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
