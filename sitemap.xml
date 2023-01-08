@@ -2,20 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Ins1nuatE.github.io/about/</loc>
-    <lastmod>2023-01-05T09:27:33+08:00</lastmod>
+    <loc>https://Ins1nuatE.github.io/categories/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
   </url><url>
-    <loc>https://Ins1nuatE.github.io/</loc>
-    <lastmod>2023-01-05T09:27:33+08:00</lastmod>
-  </url><url>
-    <loc>https://Ins1nuatE.github.io/posts/hello-world/</loc>
-    <lastmod>2023-01-05T09:27:26+08:00</lastmod>
+    <loc>https://Ins1nuatE.github.io/tags/oh-my-zsh/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
   </url><url>
     <loc>https://Ins1nuatE.github.io/posts/</loc>
-    <lastmod>2023-01-05T09:27:26+08:00</lastmod>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
   </url><url>
-    <loc>https://Ins1nuatE.github.io/categories/</loc>
+    <loc>https://Ins1nuatE.github.io/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
   </url><url>
     <loc>https://Ins1nuatE.github.io/tags/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/tags/ubuntu/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/tags/vscode/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/tags/wsl/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/tags/zsh/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2023-01-08T22:40:58+08:00</lastmod>
+  </url><url>
+    <loc>https://Ins1nuatE.github.io/about/</loc>
+    <lastmod>2023-01-08T22:32:42+08:00</lastmod>
   </url>
 </urlset>
