@@ -15,9 +15,9 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>搭建 WSL &#43; Ubuntu 开发环境 | Cruc1ble</title>
+    <title>搭建 WSL &#43; Ubuntu 开发环境 | Sorcerer&#39;s Cruc1ble</title>
 
-    <link rel="stylesheet" href="/css/meme.min.7a9db6f6be370ef599a79a9bcc23f2868d3d2913000ac2d4ca451c7c42c7d517.css"/>
+    <link rel="stylesheet" href="/css/meme.min.8647cd9f3de66721b7e77f6b7b6f1832cb8917f2685f5cf58a4b814108437d0d.css"/>
 
     
     
@@ -36,10 +36,10 @@
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Cruc1ble" />
+    <meta name="apple-mobile-web-app-title" content="Sorcerer&#39;s Cruc1ble" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Cruc1ble" />
+    <meta name="application-name" content="Sorcerer&#39;s Cruc1ble" />
     <meta name="msapplication-starturl" content="../../" />
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
@@ -57,16 +57,17 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-01-08T18:38:20+08:00",
-        "dateModified": "2023-01-08T22:55:50+08:00",
+        "dateModified": "2023-05-23T21:01:06+08:00",
         "url": "https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/",
         "headline": "搭建 WSL + Ubuntu 开发环境",
         "description": "记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh \u0026 oh-my-zsh",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1197 ,
+        "wordCount":  1200 ,
         "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
+            "description": "「 I have no limitations 」",
             "email": "G.Jianghao@outlook.com",
             "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
             "url": "https://Ins1nuatE.github.io/",
@@ -75,7 +76,7 @@
         "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
         "publisher": {
             "@type": "Organization",
-            "name": "Cruc1ble",
+            "name": "Sorcerer's Cruc1ble",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png"
@@ -97,11 +98,11 @@
 <meta property="og:title" content="搭建 WSL &#43; Ubuntu 开发环境" />
 <meta property="og:description" content="记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh &amp; oh-my-zsh" />
 <meta property="og:url" content="https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/" />
-<meta property="og:site_name" content="Cruc1ble" />
+<meta property="og:site_name" content="Sorcerer&#39;s Cruc1ble" />
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://Ins1nuatE.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-01-08T18:38:20&#43;08:00" />
-    <meta property="article:modified_time" content="2023-01-08T22:55:50&#43;08:00" />
+    <meta property="article:modified_time" content="2023-05-23T21:01:06&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -123,7 +124,7 @@
                     
     <div class="site-brand">
         
-            <a href="/" class="brand">Cruc1ble</a>
+            <a href="/" class="brand">Sorcerer&#39;s Cruc1ble</a>
         
     </div>
 
@@ -227,12 +228,17 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1197</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1200</span>
     
     
         
         <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;3&nbsp;分钟</span>
     
+    
+        
+            
+            <span class="post-meta-item busuanzi-page-pv" id="busuanzi_container_page_pv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon post-meta-icon"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_page_pv"></span></span>
+        
     
     
 </div>
@@ -250,12 +256,12 @@
   </ol>
 </nav><div class="post-body e-content">
                 <h2 id="1-为什么是-wsl-"><a href="#1-为什么是-wsl-" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:1-为什么是-wsl-" class="headings">1. 为什么是 WSL ?</a></h2>
-<p>WSL 全称是 Windows Subsystem for Linux，也就是运行在 Windows 上的 Linux 子系统，可以让我们在 Windows 上无缝地运行 GNU/Linux 环境。由于本人工作时使用的是 macOS 系统，虽然在家里的 PC 上配置了最新的 Powershell + oh-my-posh，但是和 macOS 上的体验相比还是差远了，正好在 B站 上也一直刷到安利 WSL 的视频，本人除了大学时期用虚拟机跑 Ubuntu 做过作业之外也没怎么接触过 Linux 了，闲着也是闲着，赶紧来试试吧。</p>
+<p>WSL 全称是 Windows Subsystem for Linux，也就是运行在 Windows 上的 Linux 子系统，可以让我们在 Windows 上无缝地运行 GNU/Linux 环境。由于本人工作时使用的是 macOS 系统，虽然在家里的 PC 上配置了最新的 Powershell + oh-my-posh，但是和 macOS 上的体验相比还是差远了，正好在 B 站上也一直刷到安利 WSL 的视频，本人除了大学时期用虚拟机跑 Ubuntu 做过作业之外也没怎么接触过 Linux 了，闲着也是闲着，赶紧来试试吧。</p>
 <h2 id="2-安装-wsl"><a href="#2-安装-wsl" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2-安装-wsl" class="headings">2. 安装 WSL</a></h2>
 <p>微软的 <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual" target="_blank" rel="noopener">官方文档</a> 上写得比较清楚，稍微总结一下吧：</p>
 <ol>
 <li>
-<p>启用“适用于 Linux 的 Windows 子系统”可选功能，使用管理员身份运行以下命令：</p>
+<p>启用「适用于 Linux 的 Windows 子系统」可选功能，使用管理员身份运行以下命令：</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -269,7 +275,7 @@
 <p>检查 Windows 版本，如要使用 WSL2，对于 x86_64 Windows 的版本要求是 1903 或更高版本</p>
 </li>
 <li>
-<p>启用“虚拟机平台”可选功能，使用管理员身份运行以下命令：</p>
+<p>启用「虚拟机平台」可选功能，使用管理员身份运行以下命令：</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -278,7 +284,7 @@
 <pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">dism</span><span class="p">.</span><span class="py">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> <span class="p">/</span><span class="n">featurename</span><span class="err">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
 </span></span></code></pre></td></tr></table></div>
 </div>
-</div><p>执行完此命令后，<strong>重新启动</strong>计算机</p>
+</div><p>执行完此命令后，<strong>重新启动</strong> 计算机</p>
 </li>
 <li>
 <p>下载 Linux 内核更新包，使用 <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual" target="_blank" rel="noopener">官方文档</a> 中提供的链接</p>
@@ -301,7 +307,7 @@
 <h2 id="3-配合-vscode"><a href="#3-配合-vscode" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:3-配合-vscode" class="headings">3. 配合 VSCode</a></h2>
 <p>VSCode 是一个非常强大的文本编辑器，我们都知道在 Powershell 中使用命令 <code>code</code> 可以直接在我们指定的目录下打开 VSCode，非常方便；而在 WSL 中我们也可以通过一个插件实现此功能，这个插件就是 <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl" target="_blank" rel="noopener">WSL</a>，安装完毕后我们在 WSL 中也可以直接使用 <code>code</code> 命令启动 VSCode 来写代码了。</p>
 <h2 id="4-安装-zsh--oh-my-zsh"><a href="#4-安装-zsh--oh-my-zsh" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:4-安装-zsh--oh-my-zsh" class="headings">4. 安装 Zsh + oh-my-zsh</a></h2>
-<p>最后要做的就是安装 Zsh + oh-my-zsh 来替换 Ubuntu 默认的终端了，至于为啥选择 Zsh，属于是“为了这点醋才包的这顿饺子”了，用习惯了而已。</p>
+<p>最后要做的就是安装 Zsh + oh-my-zsh 来替换 Ubuntu 默认的终端了，至于为啥选择 Zsh，属于是「为了这点醋才包的这顿饺子」了，用习惯了而已。</p>
 <ol>
 <li>
 <p>在 Ubuntu 上安装 Zsh 非常简单，只要运行以下命令即可：</p>
@@ -343,7 +349,7 @@
      zsh-autosuggestions
      zsh-syntax-highlighting
 )
-</code></pre><p><strong>重启终端</strong>后即可生效</p>
+</code></pre><p><strong>重启终端</strong> 后即可生效</p>
 </li>
 </ol>
 <p>到这里，整个 WSL 的开发环境便已经搭建完毕了。</p>
@@ -378,7 +384,8 @@
 <h2 id="个人体验"><a href="#个人体验" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:个人体验" class="headings">个人体验</a></h2>
 <p>搭建完 WSL 后本人也是稍微玩了一下，感觉还是比较丝滑的，相比于通过类似 VMware 的虚拟机软件来运行 Linux，WSL 没有那么严重的割裂感，当然功能也是少了很多（笑），我们在文件资源管理器里面也可以看到被挂载的 Linux 子系统，可以直接访问它的文件系统，好了，就介绍到这儿吧。</p>
 <blockquote>
-<p>MuMu 模拟器会与 WSL 冲突，本质上是与 Hyper-V 的冲突</p>
+<p>⚠️ <strong>CAUTION</strong><br>
+MuMu 模拟器会与 WSL 冲突，本质上是与 Hyper-V 的冲突</p>
 </blockquote>
 
             </div>
@@ -483,6 +490,15 @@
     
     
     
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/posts/review-sizeof/" rel="prev">&lt; 重新认识 sizeof</a>
+                </li>
+            
+            
+        </ul>
     
 
 
@@ -589,6 +605,10 @@
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
 
 
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
 
 
 

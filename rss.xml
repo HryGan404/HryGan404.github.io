@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Cruc1ble</title>
+        <title>Sorcerer&#39;s Cruc1ble</title>
         <link>https://Ins1nuatE.github.io/</link>
         <description>Alchemy</description>
         <generator>Hugo 0.111.3 https://gohugo.io/</generator>
@@ -23,10 +23,73 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 17 May 2023 22:54:09 &#43;0800</lastBuildDate>
+        <lastBuildDate>Tue, 23 May 2023 21:04:12 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
         
+        
+            <item>
+                <title>重新认识 sizeof</title>
+                <link>https://Ins1nuatE.github.io/posts/review-sizeof/</link>
+                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/review-sizeof/</guid>
+                <pubDate>Wed, 17 May 2023 23:04:39 &#43;0800</pubDate>
+                
+                    <author>G.Jianghao@outlook.com (Ins1nuatE)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>关于因没完全理解 sizeof 而引发了血案后尝试完全理解 sizeof 这回事</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/categories/c/c-/">C/C&#43;&#43;</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/c/c-/">C/C&#43;&#43;</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/sizeof/">sizeof</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/malloc/">malloc</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/struct/">struct</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/">内存对齐</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>搭建 WSL &#43; Ubuntu 开发环境</title>
