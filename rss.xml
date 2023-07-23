@@ -10,7 +10,7 @@
         <title>Sorcerer&#39;s Cruc1ble</title>
         <link>https://Ins1nuatE.github.io/</link>
         <description>Alchemy</description>
-        <generator>Hugo 0.111.3 https://gohugo.io/</generator>
+        <generator>Hugo 0.115.3 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,49 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Tue, 23 May 2023 21:14:15 &#43;0800</lastBuildDate>
+        <lastBuildDate>Mon, 24 Jul 2023 00:21:44 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
         
+        
+            <item>
+                <title>设计一个 C&#43;&#43; 线程池</title>
+                <link>https://Ins1nuatE.github.io/posts/design-a-threadpool/</link>
+                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/design-a-threadpool/</guid>
+                <pubDate>Sat, 22 Jul 2023 20:42:20 &#43;0800</pubDate>
+                
+                    <author>G.Jianghao@outlook.com (Ins1nuatE)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>设计与实现了一个简单的 C++ 线程池，支持添加使用函数指针与参数的自定义任务</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/categories/c-/">C&#43;&#43;</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/">线程池</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>重新认识 sizeof</title>

@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.111.3"><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.115.3"><meta name="theme-color" content="#fff" />
     <meta name="color-scheme" content="light dark">
 
     
@@ -17,11 +17,11 @@
 
     <title>搭建 WSL &#43; Ubuntu 开发环境 | Sorcerer&#39;s Cruc1ble</title>
 
-    <link rel="stylesheet" href="/css/meme.min.8647cd9f3de66721b7e77f6b7b6f1832cb8917f2685f5cf58a4b814108437d0d.css"/>
+    <link rel="stylesheet" href="/css/meme.min.56eb97e64a7bb42148e21c36a588a33b19b67b136f1c3f2115c3bbe0b0c7f5cd.css"/>
 
     
     
-        <script src="/js/meme.min.e46abe484398824efc70edec3126437916974df592d7c395b44f8f60e0f57e9d.js"></script>
+        <script src="/js/meme.min.f9f004b0d1c105a483e80decca90c784b63c49fe9cf42563d6a63ec4c73d65de.js"></script>
 
     
 
@@ -57,13 +57,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-01-08T18:38:20+08:00",
-        "dateModified": "2023-05-23T21:01:06+08:00",
+        "dateModified": "2023-07-23T12:51:47+08:00",
         "url": "https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/",
         "headline": "搭建 WSL + Ubuntu 开发环境",
         "description": "记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh \u0026 oh-my-zsh",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1200 ,
+        "wordCount":  1178 ,
         "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://Ins1nuatE.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-01-08T18:38:20&#43;08:00" />
-    <meta property="article:modified_time" content="2023-05-23T21:01:06&#43;08:00" />
+    <meta property="article:modified_time" content="2023-07-23T12:51:47&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -157,14 +157,8 @@
             
         
             
-                
-                    
-                    
-                        <li class="menu-item">
-                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
-                        </li>
-                    
-                
+                <li class="menu-item"><a href=""></a>
+                </li>
             
         
             
@@ -228,7 +222,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1200</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1178</span>
     
     
         
@@ -383,10 +377,6 @@
 </ol>
 <h2 id="个人体验"><a href="#个人体验" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:个人体验" class="headings">个人体验</a></h2>
 <p>搭建完 WSL 后本人也是稍微玩了一下，感觉还是比较丝滑的，相比于通过类似 VMware 的虚拟机软件来运行 Linux，WSL 没有那么严重的割裂感，当然功能也是少了很多（笑），我们在文件资源管理器里面也可以看到被挂载的 Linux 子系统，可以直接访问它的文件系统，好了，就介绍到这儿吧。</p>
-<blockquote>
-<p>⚠️ <strong>CAUTION</strong><br>
-MuMu 模拟器会与 WSL 冲突，本质上是与 Hyper-V 的冲突</p>
-</blockquote>
 
             </div>
 
