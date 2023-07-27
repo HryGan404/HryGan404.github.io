@@ -23,10 +23,49 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 24 Jul 2023 21:06:02 &#43;0800</lastBuildDate>
+        <lastBuildDate>Thu, 27 Jul 2023 23:04:45 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
         
+        
+            <item>
+                <title>初识 Socket 网络编程</title>
+                <link>https://Ins1nuatE.github.io/posts/introduction_to_socket_programming/</link>
+                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/introduction_to_socket_programming/</guid>
+                <pubDate>Mon, 24 Jul 2023 22:19:19 &#43;0800</pubDate>
+                
+                    <author>G.Jianghao@outlook.com (Ins1nuatE)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/categories/network/">Network</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/socket/">Socket</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>设计一个 C&#43;&#43; 线程池</title>
