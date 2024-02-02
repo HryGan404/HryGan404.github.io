@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.115.3"><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.122.0"><meta name="theme-color" content="#fff" />
     <meta name="color-scheme" content="light dark">
 
     
@@ -17,7 +17,7 @@
 
     <title>设计一个 C&#43;&#43; 线程池 | Sorcerer&#39;s Cruc1ble</title>
 
-    <link rel="stylesheet" href="/css/meme.min.c7effa7c0155ce7899220d59a684d41bdfc58aa3cb3efc33173eb72fe0362eb6.css"/>
+    <link rel="stylesheet" href="/css/meme.min.fef1c6cd84c650ca1bdf22f36fcb2df6563dd89c45f3d56363869d11ad4f0d92.css"/>
 
     
     
@@ -57,18 +57,17 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-07-22T20:42:20+08:00",
-        "dateModified": "2023-07-24T20:52:40+08:00",
+        "dateModified": "2024-02-02T14:07:10+08:00",
         "url": "https://Ins1nuatE.github.io/posts/design-a-threadpool/",
         "headline": "设计一个 C++ 线程池",
         "description": "设计与实现了一个简单的 C++ 线程池，支持添加使用函数指针与参数的自定义任务",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  2967 ,
-        "image": ["https://Ins1nuatE.github.io/img/design-a-threadpool/Thread_pool_wiki.svg.png"],
+        "wordCount":  2939 ,
+        "image": ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Thread_pool.svg/580px-Thread_pool.svg.png"],
         "author": {
             "@type": "Person",
-            "description": "「 I have no limitations 」",
-            "email": "G.Jianghao@outlook.com",
+            "description": "Midas touch",
             "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
             "url": "https://Ins1nuatE.github.io/",
             "name": "Ins1nuatE"
@@ -99,10 +98,10 @@
 <meta property="og:description" content="设计与实现了一个简单的 C&#43;&#43; 线程池，支持添加使用函数指针与参数的自定义任务" />
 <meta property="og:url" content="https://Ins1nuatE.github.io/posts/design-a-threadpool/" />
 <meta property="og:site_name" content="Sorcerer&#39;s Cruc1ble" />
-<meta property="og:locale" content="zh" /><meta property="og:image" content="https://Ins1nuatE.github.io/img/design-a-threadpool/Thread_pool_wiki.svg.png" />
+<meta property="og:locale" content="zh" /><meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Thread_pool.svg/580px-Thread_pool.svg.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-07-22T20:42:20&#43;08:00" />
-    <meta property="article:modified_time" content="2023-07-24T20:52:40&#43;08:00" />
+    <meta property="article:modified_time" content="2024-02-02T14:07:10&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -222,7 +221,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;2967</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;2939</span>
     
     
         
@@ -255,7 +254,8 @@
 </nav><div class="post-body e-content">
                 <h2 id="什么是线程池"><a href="#什么是线程池" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:什么是线程池" class="headings">什么是线程池？</a></h2>
 <p>线程池是一种典型的 <strong>生产者消费者</strong> 模型，线程池管理多个线程并为它们分配任务，实现了对线程资源的复用，用于解决一些场景下频繁创建线程和销毁线程带来的性能损耗。下图来自 Wiki，演示了一个包含等待任务队列和完成任务队列的简单线程池的工作流程。</p>
-<p><img src="/img/design-a-threadpool/Thread_pool_wiki.svg.png" alt="A sample thread pool (green boxes) with waiting tasks (blue) and completed tasks (yellow)"></p>
+<!-- ![A sample thread pool (green boxes) with waiting tasks (blue) and completed tasks (yellow)](/img/design-a-threadpool/Thread_pool_wiki.svg.png) -->
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Thread_pool.svg/580px-Thread_pool.svg.png" alt="A sample thread pool (green boxes) with waiting tasks (blue) and completed tasks (yellow)"></p>
 <h2 id="设计分析"><a href="#设计分析" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:设计分析" class="headings">设计分析</a></h2>
 <p>初见线程池，实现一个含有基本功能的简易线程池还是比较简单的，我们只需要该线程池具备基础的添加任务并执行的功能，那么重点有 2 个，一个是用于管理各个工作线程的 <strong>线程池类</strong>，另一个是用于存放具体执行任务的 <strong>任务队列</strong>。</p>
 <h3 id="任务队列"><a href="#任务队列" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:任务队列" class="headings">任务队列</a></h3>
@@ -718,7 +718,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ThreadPoolDemo</span><span class="p">(</span><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">num_of_threads</span> <span class="o">=</span> <span class="nl">std</span><span class="p">:</span><span class="err">🧵</span><span class="o">:</span><span class="n">hardware_concurrency</span><span class="p">())</span> <span class="c1">// 线程数默认为CPU的核数
+</span></span><span class="line"><span class="cl">    <span class="n">ThreadPoolDemo</span><span class="p">(</span><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">num_of_threads</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="kr">thread</span><span class="o">::</span><span class="n">hardware_concurrency</span><span class="p">())</span> <span class="c1">// 线程数默认为CPU的核数
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">:</span> <span class="n">close_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">,</span> <span class="n">threads_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kr">thread</span><span class="o">&gt;</span><span class="p">(</span><span class="n">num_of_threads</span><span class="p">))</span> <span class="p">{}</span>
 </span></span><span class="line"><span class="cl">
@@ -994,15 +994,9 @@
 </div><p>我们使用随机时间向线程池中提交任务，可以从输出的 Thread id 看到我们共使用了 4 个线程执行了任务，符合该线程池的设计目的。</p>
 <h2 id="参考"><a href="#参考" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:参考" class="headings">参考</a></h2>
 <ol>
-<li>
-<p><a href="https://en.wikipedia.org/wiki/Thread_pool" target="_blank" rel="noopener">Thread pool - Wikipedia</a></p>
-</li>
-<li>
-<p><a href="https://zhuanlan.zhihu.com/p/367309864" target="_blank" rel="noopener">基于 C++11 实现线程池 - 知乎 (zhihu.com)</a></p>
-</li>
-<li>
-<p><a href="https://github.com/progschj/ThreadPool" target="_blank" rel="noopener">progschj/ThreadPool: A simple C++11 Thread Pool implementation (github.com)</a></p>
-</li>
+<li><a href="https://en.wikipedia.org/wiki/Thread_pool" target="_blank" rel="noopener">Thread pool - Wikipedia</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/367309864" target="_blank" rel="noopener">基于 C++11 实现线程池 - 知乎 (zhihu.com)</a></li>
+<li><a href="https://github.com/progschj/ThreadPool" target="_blank" rel="noopener">progschj/ThreadPool: A simple C++11 Thread Pool implementation (github.com)</a></li>
 </ol>
 
             </div>
@@ -1090,7 +1084,7 @@
         <ul class="post-nav">
             
                 <li class="post-nav-prev">
-                    <a href="/posts/introduction_to_socket_programming/" rel="prev">&lt; 初识 Socket 网络编程</a>
+                    <a href="/posts/introduction-to-socket-programming/" rel="prev">&lt; 初识 Socket 网络编程</a>
                 </li>
             
             
@@ -1119,7 +1113,7 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2023–2023&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+            <div class="site-info">©&nbsp;2023–2024&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
             
 

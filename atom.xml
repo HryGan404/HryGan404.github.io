@@ -4,28 +4,65 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Sorcerer&#39;s Cruc1ble</title>
     <subtitle type="html">Alchemy</subtitle>
-    <updated>2023-07-27T23:04:45&#43;08:00</updated>
+    <updated>2024-02-02T14:26:14&#43;08:00</updated>
     <id>https://Ins1nuatE.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://Ins1nuatE.github.io/atom.xml" />
     <author>
             <name>Ins1nuatE</name>
             <uri>https://Ins1nuatE.github.io/</uri>
-            
-                <email>G.Jianghao@outlook.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.115.3">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.122.0">Hugo</generator>
+        <entry>
+            <title type="text">利用 /proc/stat 计算 CPU 使用率</title>
+            <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/get-cpu-usage/" />
+            <id>https://Ins1nuatE.github.io/posts/get-cpu-usage/</id>
+            <updated>2024-02-02T14:25:31&#43;08:00</updated>
+            <published>2024-02-01T17:43:07&#43;08:00</published>
+            <author>
+                    <name>Ins1nuatE</name>
+                    <uri>https://Ins1nuatE.github.io/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">介绍了如何使用 /proc/stat 以及 /proc/pid/stat 计算 CPU 使用率</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://Ins1nuatE.github.io/categories/os/" term="OS" label="OS" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://Ins1nuatE.github.io/tags/linux/" term="Linux" label="Linux" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">初识 Socket 网络编程</title>
-            <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/introduction_to_socket_programming/" />
-            <id>https://Ins1nuatE.github.io/posts/introduction_to_socket_programming/</id>
-            <updated>2023-07-27T23:02:41&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/" />
+            <id>https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</id>
+            <updated>2024-02-01T20:50:34&#43;08:00</updated>
             <published>2023-07-24T22:19:19&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
                     <uri>https://Ins1nuatE.github.io/</uri>
-                    <email>G.Jianghao@outlook.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例</summary>
             
@@ -61,12 +98,11 @@
             <title type="text">设计一个 C&#43;&#43; 线程池</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/design-a-threadpool/" />
             <id>https://Ins1nuatE.github.io/posts/design-a-threadpool/</id>
-            <updated>2023-07-24T20:52:40&#43;08:00</updated>
+            <updated>2024-02-02T14:07:10&#43;08:00</updated>
             <published>2023-07-22T20:42:20&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
                     <uri>https://Ins1nuatE.github.io/</uri>
-                    <email>G.Jianghao@outlook.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">设计与实现了一个简单的 C++ 线程池，支持添加使用函数指针与参数的自定义任务</summary>
             
@@ -102,12 +138,11 @@
             <title type="text">重新认识 sizeof</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/review-sizeof/" />
             <id>https://Ins1nuatE.github.io/posts/review-sizeof/</id>
-            <updated>2023-06-03T20:49:49&#43;08:00</updated>
+            <updated>2024-02-01T17:28:05&#43;08:00</updated>
             <published>2023-05-17T23:04:39&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
                     <uri>https://Ins1nuatE.github.io/</uri>
-                    <email>G.Jianghao@outlook.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">关于因没完全理解 sizeof 而引发了血案后尝试完全理解 sizeof 这回事</summary>
             
@@ -149,12 +184,11 @@
             <title type="text">搭建 WSL &#43; Ubuntu 开发环境</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/" />
             <id>https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</id>
-            <updated>2023-07-23T12:51:47&#43;08:00</updated>
+            <updated>2024-02-02T11:20:19&#43;08:00</updated>
             <published>2023-01-08T18:38:20&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
                     <uri>https://Ins1nuatE.github.io/</uri>
-                    <email>G.Jianghao@outlook.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh &amp; oh-my-zsh</summary>
             
