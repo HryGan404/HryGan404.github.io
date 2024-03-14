@@ -19,10 +19,59 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 02 Feb 2024 14:26:14 &#43;0800</lastBuildDate>
+        <lastBuildDate>Thu, 14 Mar 2024 14:59:46 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
         
+        
+            <item>
+                <title>实现一个简单的 Ping</title>
+                <link>https://Ins1nuatE.github.io/posts/simple-ping/</link>
+                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/simple-ping/</guid>
+                <pubDate>Wed, 13 Mar 2024 14:14:51 &#43;0800</pubDate>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>记录了实现一个简单的 Ping 的过程，通过 IP 测试主机连通性并计算时延</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/categories/network/">Network</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/ping/">Ping</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/icmp/">ICMP</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/socket/">Socket</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>利用 /proc/stat 计算 CPU 使用率</title>
