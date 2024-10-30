@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.128.2"><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.136.5"><meta name="theme-color" content="#fff" />
     <meta name="color-scheme" content="light dark">
 
     
@@ -17,20 +17,20 @@
 
     <title>搭建 WSL &#43; Ubuntu 开发环境 | Sorcerer&#39;s Cruc1ble</title>
 
-    <link rel="stylesheet" href="/css/meme.min.be690d9327bcc11ccc188bbbae018e01a7549053e85a3adf42b6b843c87a07af.css"/>
+    <link rel="stylesheet" href="/css/meme.min.61fc868b9028fb68533db25f397796fb3e7281571b659db8077f6e95826f5d11.css"/>
 
     
     
         
-            <script src="/js/meme.min.986aa6c0cadd0c87b008d652fa765950a008cb8469372fe5e961d611b7e2b592.js"></script>
+            <script src="/js/meme.min.93caf51ca41a6ed5e468d2ac73c7cdfe253a756a2192255cf28aaa8da5ea4209.js"></script>
 
         
     
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Nunito&amp;family=Open&#43;Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" media="print" onload="this.media='all'" />
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Nunito&amp;family=Open&#43;Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" /></noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto&#43;Sans&#43;SC:wght@100..900&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto&#43;Sans&#43;SC:wght@100..900&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
 
     <meta name="author" content="Ins1nuatE" /><meta name="description" content="记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh &amp; oh-my-zsh" />
 
@@ -59,17 +59,17 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-01-08T18:38:20+08:00",
-        "dateModified": "2024-07-04T16:52:15+08:00",
+        "dateModified": "2024-10-30T14:51:40+08:00",
         "url": "https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/",
         "headline": "搭建 WSL + Ubuntu 开发环境",
         "description": "记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh \u0026 oh-my-zsh",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1173 ,
+        "wordCount":  1180 ,
         "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
-            "description": "Midas touch",
+            "email": "g.jianghao@outlook.com",
             "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
             "url": "https://Ins1nuatE.github.io/",
             "name": "Ins1nuatE"
@@ -100,10 +100,10 @@
 <meta property="og:description" content="记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh &amp; oh-my-zsh" />
 <meta property="og:url" content="https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/" />
 <meta property="og:site_name" content="Sorcerer&#39;s Cruc1ble" />
-<meta property="og:locale" content="zh" /><meta property="og:image" content="https://Ins1nuatE.github.io/icons/apple-touch-icon.png" />
+<meta property="og:locale" content="zh-cn" /><meta property="og:image" content="https://Ins1nuatE.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-01-08T18:38:20&#43;08:00" />
-    <meta property="article:modified_time" content="2024-07-04T16:52:15&#43;08:00" />
+    <meta property="article:modified_time" content="2024-10-30T14:51:40&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -155,8 +155,14 @@
             
         
             
-                <li class="menu-item"><a href=""></a>
-                </li>
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
             
         
             
@@ -208,6 +214,9 @@
         <time datetime="2023-01-08T18:38:20&#43;08:00" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2023.1.8</time>
     
     
+        
+        <time datetime="2024-10-30T14:51:40&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2024.10.30</time>
+    
     
     
         
@@ -220,17 +229,12 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1173</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1180</span>
     
     
         
-        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;3&nbsp;</span>
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;3&nbsp;分钟</span>
     
-    
-        
-            
-            <span class="post-meta-item busuanzi-page-pv" id="busuanzi_container_page_pv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon post-meta-icon"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_page_pv"></span></span>
-        
     
     
 </div>
@@ -238,7 +242,7 @@
             
 
             <nav class="contents">
-  <h2 id="contents" class="contents-title"></h2><ol class="toc">
+  <h2 id="contents" class="contents-title">目录</h2><ol class="toc">
     <li><a id="contents:为什么是-wsl-" href="#为什么是-wsl-">为什么是 WSL ?</a></li>
     <li><a id="contents:安装-wsl" href="#安装-wsl">安装 WSL</a></li>
     <li><a id="contents:配合-vscode" href="#配合-vscode">配合 VSCode</a></li>
@@ -264,7 +268,7 @@
 </div>
 </div></li>
 <li>
-<p>检查 Windows 版本，如要使用 WSL2，对于 x86_64 Windows 的版本要求是 1903 或更高版本</p>
+<p>检查 Windows 版本，如要使用 WSL2，对于 x86_64 Windows 的版本要求是 1903 或更高版本。</p>
 </li>
 <li>
 <p>启用「虚拟机平台」可选功能，使用管理员身份运行以下命令：</p>
@@ -276,10 +280,10 @@
 <pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">dism</span><span class="p">.</span><span class="py">exe</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">enable-feature</span> <span class="p">/</span><span class="n">featurename</span><span class="err">:</span><span class="n">VirtualMachinePlatform</span> <span class="p">/</span><span class="n">all</span> <span class="p">/</span><span class="n">norestart</span>
 </span></span></code></pre></td></tr></table></div>
 </div>
-</div><p>执行完此命令后，<strong>重新启动</strong> 计算机</p>
+</div><p>执行完此命令后，<strong>重新启动</strong> 计算机。</p>
 </li>
 <li>
-<p>下载 Linux 内核更新包，使用 <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual" target="_blank" rel="noopener">官方文档</a> 中提供的链接</p>
+<p>下载 Linux 内核更新包，使用 <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual" target="_blank" rel="noopener">官方文档</a> 中提供的链接。</p>
 </li>
 <li>
 <p>将 WSL 2 设置为默认版本，运行以下命令：</p>
@@ -293,7 +297,7 @@
 </div>
 </div></li>
 <li>
-<p>安装 Linux 子系统，在此本人选择的版本是 Ubuntu 22.04，在 Microsoft Store 中搜索下载即可。安装完成后首次启动需要输入用户名与密码，之后就可以快乐地玩耍了</p>
+<p>安装 Linux 子系统，在此本人选择的版本是 Ubuntu 22.04，在 Microsoft Store 中搜索下载即可。安装完成后首次启动需要输入用户名与密码，之后就可以快乐地玩耍了。</p>
 </li>
 </ol>
 <h2 id="配合-vscode"><a href="#配合-vscode" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:配合-vscode" class="headings">配合 VSCode</a></h2>
@@ -308,7 +312,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install zsh
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install zsh
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div></li>
@@ -319,7 +323,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget -O- https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget -O- https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div></li>
@@ -331,7 +335,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
 </span></span><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-syntax-highlighting
 </span></span></code></pre></td></tr></table></div>
 </div>
@@ -364,13 +368,13 @@
 </div>
 </div></li>
 <li>
-<p>运行 <code>wsl -t Ubuntu-22.04</code> 停止此 Linux 子系统</p>
+<p>运行 <code>wsl -t Ubuntu-22.04</code> 停止此 Linux 子系统。</p>
 </li>
 <li>
-<p>运行 <code>wsl --export Ubuntu-22.04 'E:\Virtual machine\Ubuntu-22.04.tar'</code> 导出此 Linux 子系统到 <code>E:\Virtual machine\Ubuntu-22.04.tar</code> 目录下</p>
+<p>运行 <code>wsl --export Ubuntu-22.04 'E:\Virtual machine\Ubuntu-22.04.tar'</code> 导出此 Linux 子系统到 <code>E:\Virtual machine\Ubuntu-22.04.tar</code> 目录下。</p>
 </li>
 <li>
-<p>要是玩坏了，运行 <code>wsl --unregister Ubuntu-22.04</code> 删除被玩坏的 Linux 子系统后，通过 <code>wsl --import Ubuntu-22.04 &lt;InstallLocation&gt; 'E:\Virtual machine\Ubuntu-22.04.tar'</code> 导入 Linux 子系统，<code>&lt;InstallLocation&gt;</code> 为安装路径，可自定义</p>
+<p>要是玩坏了，运行 <code>wsl --unregister Ubuntu-22.04</code> 删除被玩坏的 Linux 子系统后，通过 <code>wsl --import Ubuntu-22.04 &lt;InstallLocation&gt; 'E:\Virtual machine\Ubuntu-22.04.tar'</code> 导入 Linux 子系统，<code>&lt;InstallLocation&gt;</code> 为安装路径，可自定义。</p>
 </li>
 </ol>
 <h2 id="个人体验"><a href="#个人体验" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:个人体验" class="headings">个人体验</a></h2>
@@ -382,15 +386,15 @@
     
     
         <ul class="post-copyright">
-            <li class="copyright-item author"><span class="copyright-item-text"></span><a href="https://Ins1nuatE.github.io/" class="p-author h-card" target="_blank" rel="noopener">Ins1nuatE</a></li>
+            <li class="copyright-item author"><span class="copyright-item-text">作者</span>：<a href="https://Ins1nuatE.github.io/" class="p-author h-card" target="_blank" rel="noopener">Ins1nuatE</a></li>
             
                 
                 
                 
                 
-                <li class="copyright-item link"><span class="copyright-item-text"></span><a href="/posts/set-up-wsl-ubuntu/" target="_blank" rel="noopener">https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</a></li>
+                <li class="copyright-item link"><span class="copyright-item-text">链接</span>：<a href="/posts/set-up-wsl-ubuntu/" target="_blank" rel="noopener">https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</a></li>
             
-            <li class="copyright-item license"><span class="copyright-item-text"></span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
+            <li class="copyright-item license"><span class="copyright-item-text">许可</span>：<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
             
         </ul>
     
@@ -402,6 +406,12 @@
         
 
         
+    <div class="updated-badge-container">
+        <span title="Updated @ 2024-10-30 14:51:40 CST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2024-10-30</text><text x="915" y="140" textLength="650" transform="scale(.1)">2024-10-30</text></g></svg>
+        </span></div>
+
 
 
         
@@ -457,7 +467,7 @@
                 
                 
                     
-                    <a href="/tags/oh-my-zsh/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Oh-My-Zsh</a>
+                    <a href="/tags/oh-my-zsh/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Oh-my-zsh</a>
                 
             
         </div>
@@ -507,7 +517,7 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2023–2024&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+            <div class="site-info">©&nbsp;2023–2024&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
             
 
@@ -593,10 +603,6 @@
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
 
 
-
-    
-        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    
 
 
 

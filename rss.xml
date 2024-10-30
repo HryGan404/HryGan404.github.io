@@ -10,16 +10,20 @@
         <title>Sorcerer&#39;s Cruc1ble</title>
         <link>https://Ins1nuatE.github.io/</link>
         <description>Alchemy</description>
-        <generator>Hugo 0.128.2 https://gohugo.io/</generator>
+        <generator>Hugo 0.136.5 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
         
+            <managingEditor>g.jianghao@outlook.com (Ins1nuatE)</managingEditor>
+        
+        
+            <webMaster>g.jianghao@outlook.com (Ins1nuatE)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Tue, 09 Jul 2024 16:10:27 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 30 Oct 2024 15:08:31 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
         
@@ -29,6 +33,8 @@
                 <link>https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/</link>
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/</guid>
                 <pubDate>Thu, 04 Jul 2024 17:14:30 &#43;0800</pubDate>
+                
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>设计一个串行任务队列</description>
@@ -43,7 +49,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/c-/">C&#43;&#43;</category>
+                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -72,6 +78,8 @@
                 <link>https://Ins1nuatE.github.io/posts/simple-ping/</link>
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/simple-ping/</guid>
                 <pubDate>Wed, 13 Mar 2024 14:14:51 &#43;0800</pubDate>
+                
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>记录了实现一个简单的 Ping 的过程，通过 IP 测试主机连通性并计算时延</description>
@@ -122,6 +130,8 @@
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/get-cpu-usage/</guid>
                 <pubDate>Thu, 01 Feb 2024 17:43:07 &#43;0800</pubDate>
                 
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
+                
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>介绍了如何使用 /proc/stat 以及 /proc/pid/stat 计算 CPU 使用率</description>
                 
@@ -158,6 +168,8 @@
                 <link>https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</link>
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</guid>
                 <pubDate>Mon, 24 Jul 2023 22:19:19 &#43;0800</pubDate>
+                
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例</description>
@@ -196,6 +208,8 @@
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/design-a-thread-pool/</guid>
                 <pubDate>Sat, 22 Jul 2023 20:42:20 &#43;0800</pubDate>
                 
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
+                
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>设计与实现了一个简单的 C++ 线程池，支持添加使用函数指针与参数的自定义任务</description>
                 
@@ -209,7 +223,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/c-/">C&#43;&#43;</category>
+                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -233,6 +247,8 @@
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/review-sizeof/</guid>
                 <pubDate>Wed, 17 May 2023 23:04:39 &#43;0800</pubDate>
                 
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
+                
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>关于因没完全理解 sizeof 而引发了血案后尝试完全理解 sizeof 这回事</description>
                 
@@ -246,7 +262,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/c-/">C&#43;&#43;</category>
+                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -256,7 +272,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/sizeof/">Sizeof</category>
+                                    <category domain="https://Ins1nuatE.github.io/tags/sizeof/">sizeof</category>
                                 
                             
                                 
@@ -275,6 +291,8 @@
                 <link>https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</link>
                 <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</guid>
                 <pubDate>Sun, 08 Jan 2023 18:38:20 &#43;0800</pubDate>
+                
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 <description>记录了一次安装与搭建 WSL Ubuntu 开发环境的过程，包括如何配合 VSCode 进行开发以及替换默认终端为 Zsh &amp; oh-my-zsh</description>
@@ -323,7 +341,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/oh-my-zsh/">Oh-My-Zsh</category>
+                                    <category domain="https://Ins1nuatE.github.io/tags/oh-my-zsh/">Oh-my-zsh</category>
                                 
                             
                         
