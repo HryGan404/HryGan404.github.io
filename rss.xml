@@ -10,7 +10,7 @@
         <title>Sorcerer&#39;s Cruc1ble</title>
         <link>https://Ins1nuatE.github.io/</link>
         <description>Alchemy</description>
-        <generator>Hugo 0.136.5 https://gohugo.io/</generator>
+        <generator>Hugo 0.143.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,49 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 20 Jan 2025 15:51:48 &#43;0800</lastBuildDate>
+        <lastBuildDate>Mon, 03 Feb 2025 23:35:36 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
         
+        
+            <item>
+                <title>协程理论（译）</title>
+                <link>https://Ins1nuatE.github.io/posts/corutine-theory/</link>
+                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/corutine-theory/</guid>
+                <pubDate>Wed, 29 Jan 2025 11:24:29 &#43;0800</pubDate>
+                
+                    <author>g.jianghao@outlook.com (Ins1nuatE)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>本篇是 C++ 协程规范系列文章的第一篇，描述了函数与协程之间的区别，并简要介绍了它们支持的操作</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Ins1nuatE.github.io/tags/%E5%8D%8F%E7%A8%8B/">协程</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>线程池与串行队列</title>
