@@ -57,7 +57,7 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-05-17T23:04:39+08:00",
-        "dateModified": "2025-01-20T15:47:53+08:00",
+        "dateModified": "2025-04-08T14:06:08+08:00",
         "url": "https://Ins1nuatE.github.io/posts/review-sizeof/",
         "headline": "重新认识 sizeof",
         "description": "关于因没完全理解 sizeof 而引发了血案后尝试完全理解 sizeof 这回事",
@@ -101,7 +101,7 @@
 <meta property="og:locale" content="zh-cn" /><meta property="og:image" content="https://Ins1nuatE.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-05-17T23:04:39&#43;08:00" />
-    <meta property="article:modified_time" content="2025-01-20T15:47:53&#43;08:00" />
+    <meta property="article:modified_time" content="2025-04-08T14:06:08&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -213,7 +213,7 @@
     
     
         
-        <time datetime="2025-01-20T15:47:53&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2025.1.20</time>
+        <time datetime="2025-04-08T14:06:08&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2025.4.8</time>
     
     
     
@@ -493,7 +493,7 @@
 </span></span><span class="line"><span class="cl">ints1[6] = 6, ints2[6] = 0, ints3[6] = 1041
 </span></span><span class="line"><span class="cl">ints1[7] = 7, ints2[7] = 0, ints3[7] = 0
 </span></span><span class="line"><span class="cl">ints1[8] = 8, ints2[8] = 0, ints3[8] = 1937010281
-</span></span><span class="line"><span class="cl">ints1[9] = 9, ints2[9] = 0, ints3[9] = 1563974449 
+</span></span><span class="line"><span class="cl">ints1[9] = 9, ints2[9] = 0, ints3[9] = 1563974449
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>可以看到当前环境下，使用 <code>malloc</code> 动态分配内存的大小小于结构体类型的大小时，就不能用 <code>sizeof</code> 去操作一个变量了，很「遗憾」的是 <code>memcpy</code> 参数大于其变量本身大小时在编译过程中编译器是不会报错的，然而后续的内存空间已经被不幸覆盖，最终在运行过程中酿成「血案」。</p>
@@ -537,9 +537,9 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2025-01-20 15:47:53 CST" style="cursor:help">
+        <span title="Updated @ 2025-04-08 14:06:08 CST" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2025-01-20</text><text x="915" y="140" textLength="650" transform="scale(.1)">2025-01-20</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2025-04-08</text><text x="915" y="140" textLength="650" transform="scale(.1)">2025-04-08</text></g></svg>
         </span></div>
 
 

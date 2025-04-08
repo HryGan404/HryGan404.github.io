@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Sorcerer&#39;s Cruc1ble</title>
     <subtitle type="html">Alchemy</subtitle>
-    <updated>2025-04-02T16:50:11&#43;08:00</updated>
+    <updated>2025-04-08T14:10:37&#43;08:00</updated>
     <id>https://Ins1nuatE.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://Ins1nuatE.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">协程理论（译）</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/corutine-theory/" />
             <id>https://Ins1nuatE.github.io/posts/corutine-theory/</id>
-            <updated>2025-02-06T14:57:37&#43;08:00</updated>
+            <updated>2025-04-08T14:04:50&#43;08:00</updated>
             <published>2025-01-29T11:24:29&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -61,7 +61,7 @@
             <title type="text">线程池与串行队列</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/" />
             <id>https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/</id>
-            <updated>2025-01-20T15:04:28&#43;08:00</updated>
+            <updated>2025-04-08T14:06:11&#43;08:00</updated>
             <published>2024-07-04T17:14:30&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -108,7 +108,7 @@
             <title type="text">实现一个简单的 Ping</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/simple-ping/" />
             <id>https://Ins1nuatE.github.io/posts/simple-ping/</id>
-            <updated>2025-01-20T15:03:39&#43;08:00</updated>
+            <updated>2025-04-08T14:06:10&#43;08:00</updated>
             <published>2024-03-13T14:14:51&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -161,7 +161,7 @@
             <title type="text">利用 /proc/stat 计算 CPU 使用率</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/get-cpu-usage/" />
             <id>https://Ins1nuatE.github.io/posts/get-cpu-usage/</id>
-            <updated>2025-01-20T14:57:39&#43;08:00</updated>
+            <updated>2025-04-08T14:05:53&#43;08:00</updated>
             <published>2024-02-01T17:43:07&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -202,7 +202,7 @@
             <title type="text">初识 Socket 网络编程</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/" />
             <id>https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</id>
-            <updated>2024-10-30T14:41:12&#43;08:00</updated>
+            <updated>2025-04-08T14:06:06&#43;08:00</updated>
             <published>2023-07-24T22:19:19&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -243,7 +243,7 @@
             <title type="text">设计一个 C&#43;&#43; 线程池</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/design-a-thread-pool/" />
             <id>https://Ins1nuatE.github.io/posts/design-a-thread-pool/</id>
-            <updated>2025-04-02T16:45:25&#43;08:00</updated>
+            <updated>2025-04-08T14:05:47&#43;08:00</updated>
             <published>2023-07-22T20:42:20&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -284,7 +284,7 @@
             <title type="text">重新认识 sizeof</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/review-sizeof/" />
             <id>https://Ins1nuatE.github.io/posts/review-sizeof/</id>
-            <updated>2025-01-20T15:47:53&#43;08:00</updated>
+            <updated>2025-04-08T14:06:08&#43;08:00</updated>
             <published>2023-05-17T23:04:39&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
@@ -331,7 +331,7 @@
             <title type="text">搭建 WSL &#43; Ubuntu 开发环境</title>
             <link rel="alternate" type="text/html" href="https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/" />
             <id>https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</id>
-            <updated>2025-01-20T15:46:34&#43;08:00</updated>
+            <updated>2025-04-08T14:06:09&#43;08:00</updated>
             <published>2023-01-08T18:38:20&#43;08:00</published>
             <author>
                     <name>Ins1nuatE</name>
