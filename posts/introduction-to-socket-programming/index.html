@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.136.5"><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.152.2"><meta name="theme-color" content="#fff" />
     <meta name="color-scheme" content="light dark">
 
     
@@ -15,7 +15,8 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>初识 Socket 网络编程 | Sorcerer&#39;s Cruc1ble</title>
+    <title>
+初识 Socket 网络编程 | Sorcerer&#39;s Cruc1ble</title>
 
     <link rel="stylesheet" href="/css/meme.min.daf5b0b0da6c20177d9d25f742510c107d94b5bc79e56323fd54207e8f7b08bb.css"/>
 
@@ -59,7 +60,7 @@
         "datePublished": "2023-07-24T22:19:19+08:00",
         "dateModified": "2025-04-08T14:06:06+08:00",
         "url": "https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/",
-        "headline": "初识 Socket 网络编程",
+        "headline": "\n初识 Socket 网络编程",
         "description": "简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
@@ -94,7 +95,8 @@
 
 
 
-<meta property="og:title" content="初识 Socket 网络编程" />
+<meta property="og:title" content="
+初识 Socket 网络编程" />
 <meta property="og:description" content="简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例" />
 <meta property="og:url" content="https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/" />
 <meta property="og:site_name" content="Sorcerer&#39;s Cruc1ble" />
@@ -194,12 +196,14 @@
 
         <article class="content post h-entry" data-align="justify" data-type="posts" data-toc-num="true">
 
-            <h1 class="post-title p-name">初识 Socket 网络编程</h1>
+            <h1 class="post-title p-name">
+初识 Socket 网络编程</h1>
 
             
 
             
-                <div class="post-description p-summary">简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例</div>
+                <div class="post-description p-summary">
+简单介绍了 Socket 网络编程的常用接口，以及它们在 TCP 协议中的调用过程，并包含代码示例</div>
                 
             
 
@@ -268,7 +272,8 @@
     <li><a id="contents:参考" href="#参考">参考</a></li>
   </ol>
 </nav><div class="post-body e-content">
-                <h2 id="什么是-socket-"><a href="#什么是-socket-" class="anchor-link" aria-label="什么是-socket-"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:什么是-socket-" class="headings">什么是 Socket ？</a></h2>
+                
+<h2 id="什么是-socket-"><a href="#什么是-socket-" class="anchor-link" aria-label="什么是-socket-"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:什么是-socket-" class="headings">什么是 Socket ？</a></h2>
 <p>Socket（套接字）被定义为在网络中传输信息的唯一标识。例如，我们通常将 Socket 定义为 IP 地址和端口的组合，因为一个 IP 地址和端口可以唯一确定一个网络通信端点。Socket 是一个较为抽象的概念，在「一切皆文件」的思想下，我们可以像操作一个 FD（文件描述符）一样操作一个 Socket，通过它来收发网络数据，实现网络通信。</p>
 <h2 id="socket-网络编程"><a href="#socket-网络编程" class="anchor-link" aria-label="socket-网络编程"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:socket-网络编程" class="headings">Socket 网络编程</a></h2>
 <p>Socket 网络编程是一种用于实现网络通信的编程技术。它基于 Socket API，通过创建 Socket 来实现不同计算机或进程之间的数据传输和通信。在 Socket 网络编程中，有两个关键的角色：Server（服务端）和 Client（客户端），Server 负责监听和接受 Client 的连接请求，而 Client 负责发起连接请求并与 Server 进行通信。Socket 网络编程使用 TCP/IP 协议（传输控制协议/因特网协议），TCP 协议提供可靠的、面向连接的通信，适用于要求数据传输的完整性和可靠性的场景。同时也可以使用 UDP 协议（用户数据报协议），UDP 协议提供无连接的通信，适用于对实时性要求较高的场景。</p>
@@ -719,7 +724,8 @@
                 
                 <li class="copyright-item link"><span class="copyright-item-text">链接</span>：<a href="/posts/introduction-to-socket-programming/" target="_blank" rel="noopener">https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</a></li>
             
-            <li class="copyright-item license"><span class="copyright-item-text">许可</span>：<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
+            <li class="copyright-item license"><span class="copyright-item-text">许可</span>：
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
             
         </ul>
     
@@ -753,7 +759,8 @@
             <ul class="related-list">
                 
                     <li class="related-item">
-                        <a href="/posts/simple-ping/" class="related-link">实现一个简单的 Ping</a>
+                        <a href="/posts/simple-ping/" class="related-link">
+实现一个简单的 Ping</a>
                     </li>
                 
             </ul>
@@ -796,12 +803,14 @@
         <ul class="post-nav">
             
                 <li class="post-nav-prev">
-                    <a href="/posts/get-cpu-usage/" rel="prev">&lt; 利用 /proc/stat 计算 CPU 使用率</a>
+                    <a href="/posts/get-cpu-usage/" rel="prev">&lt; 
+利用 /proc/stat 计算 CPU 使用率</a>
                 </li>
             
             
                 <li class="post-nav-next">
-                    <a href="/posts/design-a-thread-pool/" rel="next">设计一个 C++ 线程池 &gt;</a>
+                    <a href="/posts/design-a-thread-pool/" rel="next">
+设计一个 C++ 线程池 &gt;</a>
                 </li>
             
         </ul>
@@ -847,7 +856,9 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2023–2025&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+            <div class="site-info">©&nbsp;2023–2025&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">
+Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright">
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
             
 
