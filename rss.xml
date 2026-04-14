@@ -8,9 +8,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Sorcerer&#39;s Cruc1ble</title>
-        <link>https://Ins1nuatE.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>Alchemy</description>
-        <generator>Hugo 0.152.2 https://gohugo.io/</generator>
+        <generator>Hugo 0.159.2 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,16 +23,16 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Thu, 30 Oct 2025 17:49:36 &#43;0800</lastBuildDate>
+        <lastBuildDate>Tue, 14 Apr 2026 16:49:02 &#43;0800</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://Ins1nuatE.github.io/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
         
             <item>
                 <title>
 如何通过 WebRTC 传输预编码视频流</title>
-                <link>https://Ins1nuatE.github.io/posts/how-to-transmit-pre-encoded-video-streams-via-webrtc/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/how-to-transmit-pre-encoded-video-streams-via-webrtc/</guid>
+                <link>http://localhost:1313/posts/how-to-transmit-pre-encoded-video-streams-via-webrtc/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/how-to-transmit-pre-encoded-video-streams-via-webrtc/</guid>
                 <pubDate>Thu, 30 Oct 2025 11:39:46 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -56,7 +56,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/webrtc/">WebRTC</category>
+                                    <category domain="http://localhost:1313/categories/webrtc/">WebRTC</category>
                                 
                             
                         
@@ -66,7 +66,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/webrtc/">WebRTC</category>
+                                    <category domain="http://localhost:1313/tags/webrtc/">WebRTC</category>
                                 
                             
                         
@@ -77,8 +77,8 @@
             <item>
                 <title>
 协程理论（译）</title>
-                <link>https://Ins1nuatE.github.io/posts/corutine-theory/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/corutine-theory/</guid>
+                <link>http://localhost:1313/posts/corutine-theory/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/corutine-theory/</guid>
                 <pubDate>Wed, 29 Jan 2025 11:24:29 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -102,7 +102,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
+                                    <category domain="http://localhost:1313/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -112,7 +112,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/%E5%8D%8F%E7%A8%8B/">协程</category>
+                                    <category domain="http://localhost:1313/tags/%E5%8D%8F%E7%A8%8B/">协程</category>
                                 
                             
                         
@@ -123,8 +123,8 @@
             <item>
                 <title>
 线程池与串行队列</title>
-                <link>https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/</guid>
+                <link>http://localhost:1313/posts/thread-pool-and-serial-queue/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/thread-pool-and-serial-queue/</guid>
                 <pubDate>Thu, 04 Jul 2024 17:14:30 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -148,7 +148,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
+                                    <category domain="http://localhost:1313/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -158,13 +158,13 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/">线程池</category>
+                                    <category domain="http://localhost:1313/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/">线程池</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/%E4%B8%B2%E8%A1%8C%E9%98%9F%E5%88%97/">串行队列</category>
+                                    <category domain="http://localhost:1313/tags/%E4%B8%B2%E8%A1%8C%E9%98%9F%E5%88%97/">串行队列</category>
                                 
                             
                         
@@ -175,8 +175,8 @@
             <item>
                 <title>
 实现一个简单的 Ping</title>
-                <link>https://Ins1nuatE.github.io/posts/simple-ping/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/simple-ping/</guid>
+                <link>http://localhost:1313/posts/simple-ping/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/simple-ping/</guid>
                 <pubDate>Wed, 13 Mar 2024 14:14:51 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -200,7 +200,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/network/">Network</category>
+                                    <category domain="http://localhost:1313/categories/network/">Network</category>
                                 
                             
                         
@@ -210,19 +210,19 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/ping/">Ping</category>
+                                    <category domain="http://localhost:1313/tags/ping/">Ping</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/icmp/">ICMP</category>
+                                    <category domain="http://localhost:1313/tags/icmp/">ICMP</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/socket/">Socket</category>
+                                    <category domain="http://localhost:1313/tags/socket/">Socket</category>
                                 
                             
                         
@@ -233,8 +233,8 @@
             <item>
                 <title>
 利用 /proc/stat 计算 CPU 使用率</title>
-                <link>https://Ins1nuatE.github.io/posts/get-cpu-usage/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/get-cpu-usage/</guid>
+                <link>http://localhost:1313/posts/get-cpu-usage/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/get-cpu-usage/</guid>
                 <pubDate>Thu, 01 Feb 2024 17:43:07 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -258,7 +258,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/os/">OS</category>
+                                    <category domain="http://localhost:1313/categories/os/">OS</category>
                                 
                             
                         
@@ -268,7 +268,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/linux/">Linux</category>
+                                    <category domain="http://localhost:1313/tags/linux/">Linux</category>
                                 
                             
                         
@@ -279,8 +279,8 @@
             <item>
                 <title>
 初识 Socket 网络编程</title>
-                <link>https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/introduction-to-socket-programming/</guid>
+                <link>http://localhost:1313/posts/introduction-to-socket-programming/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/introduction-to-socket-programming/</guid>
                 <pubDate>Mon, 24 Jul 2023 22:19:19 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -304,7 +304,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/network/">Network</category>
+                                    <category domain="http://localhost:1313/categories/network/">Network</category>
                                 
                             
                         
@@ -314,7 +314,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/socket/">Socket</category>
+                                    <category domain="http://localhost:1313/tags/socket/">Socket</category>
                                 
                             
                         
@@ -325,8 +325,8 @@
             <item>
                 <title>
 设计一个 C&#43;&#43; 线程池</title>
-                <link>https://Ins1nuatE.github.io/posts/design-a-thread-pool/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/design-a-thread-pool/</guid>
+                <link>http://localhost:1313/posts/design-a-thread-pool/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/design-a-thread-pool/</guid>
                 <pubDate>Sat, 22 Jul 2023 20:42:20 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -350,7 +350,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
+                                    <category domain="http://localhost:1313/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -360,7 +360,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/">线程池</category>
+                                    <category domain="http://localhost:1313/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/">线程池</category>
                                 
                             
                         
@@ -371,8 +371,8 @@
             <item>
                 <title>
 重新认识 sizeof</title>
-                <link>https://Ins1nuatE.github.io/posts/review-sizeof/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/review-sizeof/</guid>
+                <link>http://localhost:1313/posts/review-sizeof/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/review-sizeof/</guid>
                 <pubDate>Wed, 17 May 2023 23:04:39 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -396,7 +396,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/cpp/">Cpp</category>
+                                    <category domain="http://localhost:1313/categories/cpp/">Cpp</category>
                                 
                             
                         
@@ -406,13 +406,13 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/sizeof/">sizeof</category>
+                                    <category domain="http://localhost:1313/tags/sizeof/">sizeof</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/">内存对齐</category>
+                                    <category domain="http://localhost:1313/tags/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/">内存对齐</category>
                                 
                             
                         
@@ -423,8 +423,8 @@
             <item>
                 <title>
 搭建 WSL &#43; Ubuntu 开发环境</title>
-                <link>https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</link>
-                <guid isPermaLink="true">https://Ins1nuatE.github.io/posts/set-up-wsl-ubuntu/</guid>
+                <link>http://localhost:1313/posts/set-up-wsl-ubuntu/</link>
+                <guid isPermaLink="true">http://localhost:1313/posts/set-up-wsl-ubuntu/</guid>
                 <pubDate>Sun, 08 Jan 2023 18:38:20 &#43;0800</pubDate>
                 
                     <author>g.jianghao@outlook.com (Ins1nuatE)</author>
@@ -448,7 +448,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</category>
+                                    <category domain="http://localhost:1313/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</category>
                                 
                             
                         
@@ -458,31 +458,31 @@
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/wsl/">WSL</category>
+                                    <category domain="http://localhost:1313/tags/wsl/">WSL</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/ubuntu/">Ubuntu</category>
+                                    <category domain="http://localhost:1313/tags/ubuntu/">Ubuntu</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/vscode/">VScode</category>
+                                    <category domain="http://localhost:1313/tags/vscode/">VScode</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/zsh/">Zsh</category>
+                                    <category domain="http://localhost:1313/tags/zsh/">Zsh</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://Ins1nuatE.github.io/tags/oh-my-zsh/">Oh-my-zsh</category>
+                                    <category domain="http://localhost:1313/tags/oh-my-zsh/">Oh-my-zsh</category>
                                 
                             
                         
