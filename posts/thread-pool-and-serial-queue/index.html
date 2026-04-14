@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.152.2"><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.159.2"><meta name="theme-color" content="#fff" />
     <meta name="color-scheme" content="light dark">
 
     
@@ -23,7 +23,7 @@
     
     
         
-            <script src="/js/meme.min.c95638fc569fdb204518d246bcb06986a877bcaccd3783ea6c0563885efbcfd9.js"></script>
+            <script src="/js/meme.min.25351ef415b26261aac0172bad0a0f29d84f7eaccce4d783a4e10f67f7641ec4.js"></script>
 
         
     
@@ -50,7 +50,7 @@
     
 
     
-        <link rel="canonical" href="https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/" />
+        <link rel="canonical" href="http://localhost:1313/posts/thread-pool-and-serial-queue/" />
     
 
 <script type="application/ld+json">
@@ -58,18 +58,18 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2024-07-04T17:14:30+08:00",
-        "dateModified": "2025-04-08T14:06:11+08:00",
-        "url": "https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/",
+        "dateModified": "2026-04-03T15:18:01+08:00",
+        "url": "http://localhost:1313/posts/thread-pool-and-serial-queue/",
         "headline": "\n线程池与串行队列",
         "description": "设计一个串行任务队列",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
         "wordCount":  1096 ,
-        "image": ["https://Ins1nuatE.github.io/img/thread-pool-and-serial-queue/thread-pool.png"],
+        "image": ["http://localhost:1313/img/thread-pool-and-serial-queue/thread-pool.png"],
         "author": {
             "@type": "Person",
             "email": "g.jianghao@outlook.com",
-            "image": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png",
+            "image": "http://localhost:1313/icons/apple-touch-icon.png",
             "url": "https://Ins1nuatE.github.io/",
             "name": "Ins1nuatE"
         },
@@ -79,13 +79,13 @@
             "name": "Sorcerer's Cruc1ble",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://Ins1nuatE.github.io/icons/apple-touch-icon.png"
+                "url": "http://localhost:1313/icons/apple-touch-icon.png"
             },
-            "url": "https://Ins1nuatE.github.io/"
+            "url": "http://localhost:1313/"
         },
         "mainEntityOfPage": {
             "@type": "WebSite",
-            "@id": "https://Ins1nuatE.github.io/"
+            "@id": "http://localhost:1313/"
         }
     }
 </script>
@@ -98,12 +98,12 @@
 <meta property="og:title" content="
 线程池与串行队列" />
 <meta property="og:description" content="设计一个串行任务队列" />
-<meta property="og:url" content="https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/" />
+<meta property="og:url" content="http://localhost:1313/posts/thread-pool-and-serial-queue/" />
 <meta property="og:site_name" content="Sorcerer&#39;s Cruc1ble" />
-<meta property="og:locale" content="zh-cn" /><meta property="og:image" content="https://Ins1nuatE.github.io/img/thread-pool-and-serial-queue/thread-pool.png" />
+<meta property="og:locale" content="zh-cn" /><meta property="og:image" content="http://localhost:1313/img/thread-pool-and-serial-queue/thread-pool.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2024-07-04T17:14:30&#43;08:00" />
-    <meta property="article:modified_time" content="2025-04-08T14:06:11&#43;08:00" />
+    <meta property="article:modified_time" content="2026-04-03T15:18:01&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -217,7 +217,7 @@
     
     
         
-        <time datetime="2025-04-08T14:06:11&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2025.4.8</time>
+        <time datetime="2026-04-03T15:18:01&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2026.4.3</time>
     
     
     
@@ -353,7 +353,7 @@
 </span></span><span class="line"><span class="cl">        <span class="o">:</span> <span class="n">parent_</span><span class="p">(</span><span class="n">parent</span><span class="p">),</span> <span class="n">func_</span><span class="p">(</span><span class="n">func</span><span class="p">)</span> <span class="p">{}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// rule of zero
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">operator</span><span class="p">()()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="n">func_</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">      <span class="n">parent_</span><span class="o">-&gt;</span><span class="n">task_complete</span><span class="p">();</span>
@@ -370,7 +370,7 @@
 </span></span><span class="line"><span class="cl">      <span class="o">:</span> <span class="n">thread_pool_</span><span class="p">(</span><span class="n">thread_pool</span><span class="p">),</span> <span class="n">queue_name_</span><span class="p">(</span><span class="n">queue_name</span><span class="p">)</span> <span class="p">{}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// rule of five
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="o">~</span><span class="n">SerialQueue</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl">  <span class="o">~</span><span class="n">SerialQueue</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">SerialQueue</span><span class="p">(</span><span class="k">const</span> <span class="n">SerialQueue</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">SerialQueue</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">SerialQueue</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">SerialQueue</span><span class="p">(</span><span class="n">SerialQueue</span> <span class="o">&amp;&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
@@ -417,7 +417,7 @@
 </span></span><span class="line"><span class="cl">  <span class="n">ThreadPool</span> <span class="o">&amp;</span><span class="n">thread_pool_</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">queue_name_</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="kt">bool</span> <span class="n">task_inflight_</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>  <span class="c1">// thread-safe
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">std</span><span class="o">::</span><span class="n">queue</span><span class="o">&lt;</span><span class="n">Task</span><span class="o">&gt;</span> <span class="n">task_queue_</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl">  <span class="n">std</span><span class="o">::</span><span class="n">queue</span><span class="o">&lt;</span><span class="n">Task</span><span class="o">&gt;</span> <span class="n">task_queue_</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">std</span><span class="o">::</span><span class="n">mutex</span> <span class="n">queue_mutex_</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span></code></pre></td></tr></table></div>
@@ -529,7 +529,7 @@
 </span></span><span class="line"><span class="cl">  <span class="o">~</span><span class="n">ThreadPool</span><span class="p">()</span> <span class="p">{</span> <span class="n">wait_and_stop</span><span class="p">();</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// rule of five
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">ThreadPool</span><span class="p">(</span><span class="k">const</span> <span class="n">ThreadPool</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl">  <span class="n">ThreadPool</span><span class="p">(</span><span class="k">const</span> <span class="n">ThreadPool</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">ThreadPool</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">ThreadPool</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">ThreadPool</span><span class="p">(</span><span class="n">ThreadPool</span> <span class="o">&amp;&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">ThreadPool</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">ThreadPool</span> <span class="o">&amp;&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
@@ -594,7 +594,7 @@
                 
                 
                 
-                <li class="copyright-item link"><span class="copyright-item-text">链接</span>：<a href="/posts/thread-pool-and-serial-queue/" target="_blank" rel="noopener">https://Ins1nuatE.github.io/posts/thread-pool-and-serial-queue/</a></li>
+                <li class="copyright-item link"><span class="copyright-item-text">链接</span>：<a href="/posts/thread-pool-and-serial-queue/" target="_blank" rel="noopener">http://localhost:1313/posts/thread-pool-and-serial-queue/</a></li>
             
             <li class="copyright-item license"><span class="copyright-item-text">许可</span>：
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
@@ -610,9 +610,9 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2025-04-08 14:06:11 CST" style="cursor:help">
+        <span title="Updated @ 2026-04-03 15:18:01 CST" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2025-04-08</text><text x="915" y="140" textLength="650" transform="scale(.1)">2025-04-08</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2026-04-03</text><text x="915" y="140" textLength="650" transform="scale(.1)">2026-04-03</text></g></svg>
         </span></div>
 
 
@@ -709,26 +709,6 @@
 
 
         
-    
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-            <div id="giscus"></div>
-        
-
-        
-
-    
-
 
 
     </div>
@@ -746,7 +726,7 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2023–2025&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">
+            <div class="site-info">©&nbsp;2023–2026&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Ins1nuatE</div><div class="powered-by">
 Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright">
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
@@ -814,63 +794,6 @@ Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noope
 
 
 
-
-    
-
-        
-
-        
-
-        
-
-        
-
-        
-            <script>
-    function loadComments() {
-        (function() {
-            const giscus = document.getElementById('giscus');
-            if (!giscus) return;
-            const script = document.createElement('script');
-
-            script.src = 'https:\/\/giscus.app\/client.js';
-            script.dataset.repo = 'Ins1nuatE\/Ins1nuatE.github.io';
-            script.dataset.repoId = 'R_kgDOIuP3Ig';
-            script.dataset.category = 'Announcements';
-            script.dataset.categoryId = 'DIC_kwDOIuP3Is4CTaXj';
-            script.dataset.mapping = 'pathname';
-
-            
-                script.dataset.strict = '0';
-            
-            
-                script.dataset.reactionsEnabled = '1';
-            
-            
-                script.dataset.emitMetadata = '0';
-            
-
-            script.dataset.inputPosition = 'top';
-            const isDark = getCurrentTheme() === 'dark';
-        if (isDark) {
-            script.dataset.theme = 'dark';
-        } else {
-            script.dataset.theme = 'light';
-        }
-            script.dataset.lang = 'zh-CN';
-            script.dataset.loading = 'lazy';
-            script.crossOrigin = 'anonymous';
-            script.async = true;
-
-            giscus.appendChild(script);
-        })();
-    }
-</script>
-        
-
-        
-
-    
 
 
 
