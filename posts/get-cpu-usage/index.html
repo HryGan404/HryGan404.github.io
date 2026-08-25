@@ -18,12 +18,12 @@
     <title>
 利用 /proc/stat 计算 CPU 使用率 | Sorcerer&#39;s Cruc1ble</title>
 
-    <link rel="stylesheet" href="/css/meme.min.7a1ff6b8f6a133acc2d29b08ad9ef674c1cf1b01f4b1ae5d173fec96b7e611e3.css"/>
+    <link rel="stylesheet" href="/css/meme.min.5caec418c41e25a6ececeacb720f403efe55bfaa2e751d2067f725655a02f286.css"/>
 
     
     
         
-            <script src="/js/meme.min.671d5565eeb4ae69f7d79ca844b6a6cb69b87e035f5812499da564d9a03b7707.js"></script>
+            <script src="/js/meme.min.f7493e994f19b601707521d3ff50b11bc4563335b9a598f164a65f00ac0a13e5.js"></script>
 
         
     
@@ -163,6 +163,26 @@
             
         
             
+                <li class="menu-item search-item">
+                        <div class="search-container">
+    <form id="search" class="search" role="search" data-search>
+        <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+        <input type="search" id="search-input" class="search-input" placeholder="搜索文章…" autocomplete="off">
+    </form>
+        <div id="search-results" class="search-results" hidden></div>
+</div>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">阅读更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
                 
             
         
@@ -261,7 +281,7 @@
                     </details>
                 
 
-                <div class="post-body e-content">
+                <div class="post-body e-content" data-search-body data-search-title="利用 /proc/stat 计算 CPU 使用率">
                     
 <h2 id="cpu-usage"><a href="#cpu-usage" class="anchor-link" aria-label="cpu-usage"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:cpu-usage" class="headings">CPU usage</a></h2>
 <p>我们经常可以通过系统监控工具观察计算机的各种信息，例如在 Linux 下我们常用 <code>top</code> 命令查看具体进程的 CPU 使用率与内存占用率，容我安利一下 bpytop 这个工具，UI 更好看还能自定义，回到正题，内存占用率的计算方式很好理解，就如字面意思，进程所占用的内存大小除以计算机内存的总大小即可得到具体进程的内存占用率，那么 CPU 使用率该如何计算呢？毕竟 CPU 作为一个计算单元并没有所谓容量的概念，既然没有容量，那么对于 CPU 更为重要的就是时间了，进程的 CPU 使用率就是通过进程所占用的 CPU 工作时间计算得来的。</p>
@@ -530,7 +550,7 @@ Linux 中的线程调度与 CPU Affinity</a>
     <footer id="footer" class="footer">
         <div class="footer-inner">
             <div class="site-info">©&nbsp;2023–2026&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Henry Gan</div><div class="powered-by">
-Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright">
+Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/HryGan404/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright">
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
             

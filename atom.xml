@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Sorcerer&#39;s Cruc1ble</title>
     <subtitle type="html">Alchemy</subtitle>
-    <updated>2026-08-25T10:40:14&#43;08:00</updated>
+    <updated>2026-08-25T14:19:08&#43;08:00</updated>
     <id>https://HryGan404.github.io/</id>
     <link rel="alternate" type="text/html" href="https://HryGan404.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://HryGan404.github.io/atom.xml" />
@@ -21,7 +21,7 @@
 Linux 中的线程调度与 CPU Affinity</title>
             <link rel="alternate" type="text/html" href="https://HryGan404.github.io/posts/thread-scheduling-and-cpu-affinity-in-linux/" />
             <id>https://HryGan404.github.io/posts/thread-scheduling-and-cpu-affinity-in-linux/</id>
-            <updated>2026-08-25T10:30:05&#43;08:00</updated>
+            <updated>2026-08-25T13:54:37&#43;08:00</updated>
             <published>2026-08-24T16:43:28&#43;08:00</published>
             <author>
                     <name>Henry Gan</name>
@@ -183,7 +183,7 @@ Linux 中的线程调度与 CPU Affinity</title>
 线程池与串行队列</title>
             <link rel="alternate" type="text/html" href="https://HryGan404.github.io/posts/thread-pool-and-serial-queue/" />
             <id>https://HryGan404.github.io/posts/thread-pool-and-serial-queue/</id>
-            <updated>2026-08-19T20:57:49&#43;08:00</updated>
+            <updated>2026-08-25T10:59:06&#43;08:00</updated>
             <published>2024-07-04T17:14:30&#43;08:00</published>
             <author>
                     <name>Henry Gan</name>
@@ -339,7 +339,7 @@ Linux 中的线程调度与 CPU Affinity</title>
 初识 Socket 网络编程</title>
             <link rel="alternate" type="text/html" href="https://HryGan404.github.io/posts/introduction-to-socket-programming/" />
             <id>https://HryGan404.github.io/posts/introduction-to-socket-programming/</id>
-            <updated>2026-04-14T16:41:19&#43;08:00</updated>
+            <updated>2026-08-25T10:59:06&#43;08:00</updated>
             <published>2023-07-24T22:19:19&#43;08:00</published>
             <author>
                     <name>Henry Gan</name>
